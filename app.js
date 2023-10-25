@@ -91,50 +91,50 @@ window.addEventListener('load', function () {
   aboutPar.classList.add('tampil-icon');
   aboutPar.classList.remove('-translate-x-40');
   aboutPar.classList.remove('opacity-0');
+  setTimeout(() => {
+    imgHero.classList.add('tampil-icon');
+    imgHero.classList.remove('translate-x-40');
+    imgHero.classList.remove('opacity-0');
+  }, 500);
 });
 
 window.addEventListener('scroll', function () {
   let wScroll = this.scrollY;
-  if (wScroll > home.offsetTop - 20) {
-    imgHero.classList.add('tampil-icon');
-    imgHero.classList.remove('translate-x-40');
-    imgHero.classList.remove('opacity-0');
-  }
-  if (wScroll > tentangPar.offsetTop - 630) {
+  if (wScroll > tentangPar.offsetTop - 1000) {
     tentangPar.classList.remove('hidden-icon-ab');
     tentangPar.classList.add('tampil-icon');
   }
-  if (wScroll > freindPar.offsetTop - 630) {
+  if (wScroll > freindPar.offsetTop - 900) {
     freindPar.classList.remove('hidden-icon-friend');
     freindPar.classList.add('tampil-icon');
   }
 
-  if (wScroll > portPar.offsetTop - 500) {
+  if (wScroll > portPar.offsetTop - 900) {
     portPar.classList.remove('hidden-port');
     portPar.classList.add('tampil-icon');
   }
-  if (wScroll > resiPar.offsetTop - 500) {
+  if (wScroll > resiPar.offsetTop - 900) {
     resiPar.classList.remove('hidden-proj');
     resiPar.classList.add('tampil-icon');
   }
-  if (wScroll > gridPar.offsetTop - 500) {
+  if (wScroll > gridPar.offsetTop - 900) {
     gridPar.classList.remove('hidden-grid');
     gridPar.classList.add('tampil-icon');
   }
-  if (wScroll > todoPar.offsetTop - 500) {
+  if (wScroll > todoPar.offsetTop - 900) {
     todoPar.classList.remove('hidden-proj');
     todoPar.classList.add('tampil-icon');
   }
-  if (wScroll > suwitPar.offsetTop - 500) {
+  if (wScroll > suwitPar.offsetTop - 900) {
     suwitPar.classList.remove('hidden-grid');
     suwitPar.classList.add('tampil-icon');
   }
-  if (wScroll > clientPar.offsetTop - 650) {
+  if (wScroll > clientPar.offsetTop - 900) {
     clientPar.classList.remove('hidden-client');
     clientPar.classList.add('tampil-icon');
   }
 
-  if (wScroll > clientPar.offsetTop - 400) {
+  if (wScroll > clientPar.offsetTop - 800) {
     imgClient.forEach((a, b) => {
       setTimeout(
         () => {
@@ -146,12 +146,12 @@ window.addEventListener('scroll', function () {
     });
   }
 
-  if (wScroll > contact.offsetTop - 300) {
+  if (wScroll > contact.offsetTop - 750) {
     form.classList.add('tampil-icon');
     form.classList.remove('opacity-0');
     form.classList.remove('translate-x-48');
   }
-  if (wScroll > contact.offsetTop - 450) {
+  if (wScroll > contact.offsetTop - 850) {
     contactPar.classList.add('tampil-icon');
     contactPar.classList.remove('-translate-y-36');
     contactPar.classList.remove('opacity-0');
