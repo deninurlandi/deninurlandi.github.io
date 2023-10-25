@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .navbar-fixed {
   @apply fixed z-[999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
@@ -27,4 +27,31 @@ body {
 
 .toggle-circle {
   @apply translate-x-3 bg-dark;
+}
+
+.hidden-icon-ab {
+  @apply translate-x-20 -translate-y-20 opacity-0;
+}
+.hidden-icon-friend {
+  @apply -translate-x-20 -translate-y-20 opacity-0;
+}
+.tampil-icon {
+  @apply translate-x-0 translate-y-0 opacity-100 scale-100;
+}
+
+.hidden-port {
+  @apply -translate-x-36 scale-75 translate-y-20 opacity-0;
+}
+
+.hidden-proj {
+  @apply scale-75 opacity-0;
+}
+.hidden-grid {
+  @apply scale-125 opacity-0;
+}
+.hidden-client {
+  @apply -translate-y-32 opacity-0 scale-125;
+}
+.hidden-img-client {
+  @apply -translate-x-10 -translate-y-12 scale-95 opacity-0;
 }
