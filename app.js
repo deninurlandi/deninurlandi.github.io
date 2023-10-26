@@ -100,41 +100,41 @@ window.addEventListener('load', function () {
 
 window.addEventListener('scroll', function () {
   let wScroll = this.scrollY;
-  if (wScroll > tentangPar.offsetTop - 1000) {
+  if (wScroll > tentangPar.offsetTop - 900) {
     tentangPar.classList.remove('hidden-icon-ab');
     tentangPar.classList.add('tampil-icon');
   }
-  if (wScroll > freindPar.offsetTop - 900) {
+  if (wScroll > freindPar.offsetTop - 800) {
     freindPar.classList.remove('hidden-icon-friend');
     freindPar.classList.add('tampil-icon');
   }
 
-  if (wScroll > portPar.offsetTop - 900) {
+  if (wScroll > portPar.offsetTop - 800) {
     portPar.classList.remove('hidden-port');
     portPar.classList.add('tampil-icon');
   }
-  if (wScroll > resiPar.offsetTop - 900) {
+  if (wScroll > resiPar.offsetTop - 800) {
     resiPar.classList.remove('hidden-proj');
     resiPar.classList.add('tampil-icon');
   }
-  if (wScroll > gridPar.offsetTop - 900) {
+  if (wScroll > gridPar.offsetTop - 800) {
     gridPar.classList.remove('hidden-grid');
     gridPar.classList.add('tampil-icon');
   }
-  if (wScroll > todoPar.offsetTop - 900) {
+  if (wScroll > todoPar.offsetTop - 800) {
     todoPar.classList.remove('hidden-proj');
     todoPar.classList.add('tampil-icon');
   }
-  if (wScroll > suwitPar.offsetTop - 900) {
+  if (wScroll > suwitPar.offsetTop - 800) {
     suwitPar.classList.remove('hidden-grid');
     suwitPar.classList.add('tampil-icon');
   }
-  if (wScroll > clientPar.offsetTop - 900) {
+  if (wScroll > clientPar.offsetTop - 800) {
     clientPar.classList.remove('hidden-client');
     clientPar.classList.add('tampil-icon');
   }
 
-  if (wScroll > clientPar.offsetTop - 800) {
+  if (wScroll > clientPar.offsetTop - 760) {
     imgClient.forEach((a, b) => {
       setTimeout(
         () => {
@@ -146,12 +146,12 @@ window.addEventListener('scroll', function () {
     });
   }
 
-  if (wScroll > contact.offsetTop - 750) {
+  if (wScroll > contact.offsetTop - 700) {
     form.classList.add('tampil-icon');
     form.classList.remove('opacity-0');
     form.classList.remove('translate-x-48');
   }
-  if (wScroll > contact.offsetTop - 850) {
+  if (wScroll > contact.offsetTop - 800) {
     contactPar.classList.add('tampil-icon');
     contactPar.classList.remove('-translate-y-36');
     contactPar.classList.remove('opacity-0');
