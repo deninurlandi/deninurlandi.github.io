@@ -55,3 +55,13 @@ body {
 .hidden-img-client {
   @apply -translate-x-10 -translate-y-12 scale-95 opacity-0;
 }
+.hidden-blog {
+  @apply scale-x-50 translate-x-28 opacity-0;
+}
+.hidden-blog-s {
+  @apply scale-x-[0.2] -translate-x-40 opacity-0;
+}
+
+.hidden-blog-e {
+  @apply scale-x-[0.2] translate-x-40 opacity-0;
+}
