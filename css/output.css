@@ -1363,6 +1363,14 @@ body {
   opacity: 0;
 }
 
+.hidden-soc {
+  --tw-translate-x: -4rem;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
 @keyframes pulse {
   50% {
     opacity: .5;

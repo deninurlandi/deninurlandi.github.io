@@ -65,3 +65,6 @@ body {
 .hidden-blog-e {
   @apply scale-x-[0.2] translate-x-40 opacity-0;
 }
+.hidden-soc {
+  @apply -translate-x-16 scale-0 opacity-0;
+}
