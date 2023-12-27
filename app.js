@@ -81,6 +81,7 @@ const tentangPar = document.querySelector('.tentang-parr');
 const freindPar = document.querySelector('.friend-parr');
 const portPar = document.querySelector('.port-parr');
 const resiPar = document.querySelector('.resi-parr');
+const eccPar = document.querySelector('.ecc-parr');
 const gridPar = document.querySelector('.grid-parr');
 const todoPar = document.querySelector('.todo-parr');
 const suwitPar = document.querySelector('.suwit-parr');
@@ -116,13 +117,10 @@ window.addEventListener('scroll', function () {
 
   if (wScroll > freindPar.offsetTop - 690) {
     socmPar.forEach((socm, i) => {
-      setTimeout(
-        () => {
-          socm.classList.remove('hidden-soc');
-          socm.classList.add('tampil-icon');
-        },
-        300 * (i + 1),
-      );
+      setTimeout(() => {
+        socm.classList.remove('hidden-soc');
+        socm.classList.add('tampil-icon');
+      }, 300 * (i + 1));
     });
   }
 
@@ -134,16 +132,20 @@ window.addEventListener('scroll', function () {
     resiPar.classList.remove('hidden-proj');
     resiPar.classList.add('tampil-icon');
   }
+  if (wScroll > eccPar.offsetTop - 720) {
+    eccPar.classList.remove('hidden-grid');
+    eccPar.classList.add('tampil-icon');
+  }
   if (wScroll > gridPar.offsetTop - 720) {
-    gridPar.classList.remove('hidden-grid');
+    gridPar.classList.remove('hidden-proj');
     gridPar.classList.add('tampil-icon');
   }
   if (wScroll > todoPar.offsetTop - 720) {
-    todoPar.classList.remove('hidden-proj');
+    todoPar.classList.remove('hidden-grid');
     todoPar.classList.add('tampil-icon');
   }
   if (wScroll > suwitPar.offsetTop - 720) {
-    suwitPar.classList.remove('hidden-grid');
+    suwitPar.classList.remove('hidden-proj');
     suwitPar.classList.add('tampil-icon');
   }
   if (wScroll > clientPar.offsetTop - 750) {
@@ -153,13 +155,10 @@ window.addEventListener('scroll', function () {
 
   if (wScroll > clientPar.offsetTop - 700) {
     imgClient.forEach((a, b) => {
-      setTimeout(
-        () => {
-          a.classList.remove('hidden-img-client');
-          a.classList.add('tampil-icon');
-        },
-        300 * (b + 1),
-      );
+      setTimeout(() => {
+        a.classList.remove('hidden-img-client');
+        a.classList.add('tampil-icon');
+      }, 300 * (b + 1));
     });
   }
 
